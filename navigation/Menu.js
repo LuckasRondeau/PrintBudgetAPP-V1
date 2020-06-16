@@ -13,11 +13,12 @@ import { DrawerItem as DrawerCustomItem } from '../components';
 function CustomDrawerContent({ drawerPosition, navigation, profile, focused, state, ...rest }) {
   const insets = useSafeArea();
   const screens = [
-    "Home", 
-    "Profile",
+    "Principal", 
+    "Perfil",
     "Account",
     "Elements",
     "Articles",
+    "Solicitudes",
   ];
   return (
     <Block
