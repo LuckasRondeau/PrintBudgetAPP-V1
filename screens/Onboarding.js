@@ -30,13 +30,13 @@ class Onboarding extends React.Component {
             <Block flex space="around" style={{ zIndex: 2 }}>
               <Block style={styles.title}>
                 <Block center>
-                  <Text color="white" size={60}>
-                    PintBudget
+                  <Text color="white" size={50}>
+                    PrintBudget
                   </Text>
                 </Block>
                 <Block center>
-                  <Text color="white" size={60}>
-                    App
+                  <Text color="white" size={25}>
+                    descripción de app
                   </Text>
                 </Block>
               </Block>
