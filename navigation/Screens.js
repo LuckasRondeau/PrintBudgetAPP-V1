@@ -65,16 +65,16 @@ function ArticlesStack(props) {
 
 function ProfileStack(props) {
   return (
-    <Stack.Navigator initialRouteName="Perfil" mode="card" headerMode="screen">
+    <Stack.Navigator initialRouteName="Mi Perfil" mode="card" headerMode="screen">
       <Stack.Screen
-        name="Perfil"
+        name="Mi Perfil"
         component={Profile}
         options={{
           header: ({ navigation, scene }) => (
             <Header
               transparent
               white
-              title="Perfil"
+              title="Mi Perfil"
               navigation={navigation}
               scene={scene}
             />
@@ -120,6 +120,28 @@ function OrdersStack(props) {
           header: ({ navigation, scene }) => (
             <Header
               title="Solicitudes"
+              search
+              options
+              navigation={navigation}
+              scene={scene}
+            />
+          ),
+          cardStyle: { backgroundColor: "#F8F9FE" }
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+function ContactsStack(props) {
+  return (
+    <Stack.Navigator mode="card" headerMode="screen">
+      <Stack.Screen
+        name="Contacto"
+        component={Orders}
+        options={{
+          header: ({ navigation, scene }) => (
+            <Header
+              title="Contacto"
               search
               options
               navigation={navigation}
@@ -180,11 +202,12 @@ function AppStack(props) {
       initialRouteName="Principal"
     >
       <Drawer.Screen name="Principal" component={HomeStack} />
-      <Drawer.Screen name="Perfil" component={ProfileStack} />
+      <Drawer.Screen name="Mi Perfil" component={ProfileStack} />
       <Drawer.Screen name="Account" component={Register} />
       <Drawer.Screen name="Elements" component={ElementsStack} />
       <Drawer.Screen name="Articles" component={ArticlesStack} />
       <Drawer.Screen name="Solicitudes" component={OrdersStack} />
+      <Drawer.Screen name="Contacto" component={ContactsStack} />
     </Drawer.Navigator>
   );
 }

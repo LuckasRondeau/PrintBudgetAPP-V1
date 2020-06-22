@@ -1,10 +1,6 @@
 import React from "react";
 import { useSafeArea } from "react-native-safe-area-context";
-import {
-  ScrollView,
-  StyleSheet,
-  Image
-} from "react-native";
+import {ScrollView,StyleSheet,Image } from "react-native";
 import { Block, Text, theme } from "galio-framework";
 
 import Images from "../constants/Images";
@@ -14,11 +10,12 @@ function CustomDrawerContent({ drawerPosition, navigation, profile, focused, sta
   const insets = useSafeArea();
   const screens = [
     "Principal", 
-    "Perfil",
+    "Mi Perfil",
     "Account",
     "Elements",
     "Articles",
     "Solicitudes",
+    "Contacto",
   ];
   return (
     <Block

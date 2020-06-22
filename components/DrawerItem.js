@@ -22,7 +22,7 @@ class DrawerItem extends React.Component {
       case "Elements":
         return (
           <Icon
-            name="map-big"
+            name="padlock-unlocked"
             family="ArgonExtra"
             size={14}
             color={focused ? "white" : argonTheme.COLORS.ERROR}
@@ -37,10 +37,10 @@ class DrawerItem extends React.Component {
             color={focused ? "white" : argonTheme.COLORS.PRIMARY}
           />
         );
-      case "Perfil":
+      case "Mi Perfil":
         return (
           <Icon
-            name="chart-pie-35"
+            name="bag-17"
             family="ArgonExtra"
             size={14}
             color={focused ? "white" : argonTheme.COLORS.WARNING}
@@ -55,9 +55,16 @@ class DrawerItem extends React.Component {
             color={focused ? "white" : argonTheme.COLORS.INFO}
           />
         );
-      case "Getting Started":
+      case "Solicitudes":
         return (<Icon
-          name="spaceship"
+          name="map-big"
+          family="ArgonExtra"
+          size={14}
+          color={focused ? "white" : "rgba(0,0,0,0.5)"}
+        />);
+        case "Contacto":
+        return (<Icon
+          name="support"
           family="ArgonExtra"
           size={14}
           color={focused ? "white" : "rgba(0,0,0,0.5)"}
@@ -67,6 +74,7 @@ class DrawerItem extends React.Component {
       default:
         return null;
     }
+    
   };
 
   render() {
