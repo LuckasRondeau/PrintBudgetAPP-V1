@@ -10,12 +10,12 @@ import { Block } from "galio-framework";
 // screens
 import Home from "../screens/Home";
 import Onboarding from "../screens/Onboarding";
-import Pro from "../screens/Pro";
 import Profile from "../screens/Profile";
 import Register from "../screens/Register";
 import Elements from "../screens/Elements";
 import Articles from "../screens/Articles";
 import Orders from "../screens/Orders";
+import Contacts from "../screens/Contacts";
 // drawer
 import CustomDrawerContent from "./Menu";
 
@@ -137,7 +137,7 @@ function ContactsStack(props) {
     <Stack.Navigator mode="card" headerMode="screen">
       <Stack.Screen
         name="Contacto"
-        component={Orders}
+        component={Contacts}
         options={{
           header: ({ navigation, scene }) => (
             <Header
