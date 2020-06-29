@@ -19,7 +19,7 @@ class Contacts extends React.Component {
           placeholderTextColor={theme.COLORS.argonTheme}
           />
 
-        <Input placeholder="email@gmail.com"
+        <Input placeholder="email1@gmail.com"
           color={theme.COLORS.SUCCESS}
           style={{ borderColor: theme.COLORS.argonTheme }}
           placeholderTextColor={theme.COLORS.argonTheme} />
