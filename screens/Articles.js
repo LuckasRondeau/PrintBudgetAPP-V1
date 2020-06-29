@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  ScrollView,
-  StyleSheet,
-  Image,
-  TouchableWithoutFeedback,
-  ImageBackground,
-  Dimensions
+import { ScrollView,StyleSheet,Image,TouchableWithoutFeedback,ImageBackground,Dimensions
 } from "react-native";
 //galio
 import { Block, Text, theme } from "galio-framework";

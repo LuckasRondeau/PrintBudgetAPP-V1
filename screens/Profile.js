@@ -1,15 +1,9 @@
 import React from "react";
 import {
-  StyleSheet,
-  Dimensions,
-  ScrollView,
-  Image,
-  ImageBackground,
-  Platform
+  StyleSheet, Dimensions, ScrollView, Image, ImageBackground, Platform
 } from "react-native";
 import { Block, Text, theme } from "galio-framework";
 
-import { Button } from "../components";
 import { Images, argonTheme } from "../constants";
 import { HeaderHeight } from "../constants/utils";
 
@@ -38,15 +32,6 @@ class Profile extends React.Component {
                     style={styles.avatar}
                   />
                 </Block>
-                <Block style={styles.info}>
-                  <Block
-                    middle
-                    row
-                    space="evenly"
-                    style={{ marginTop: 20, paddingBottom: 24 }}
-                  >                    
-                  </Block>
-                </Block>
                 <Block flex>
                   <Block middle style={styles.nameInfo}>
                     <Text bold size={28} color="#32325D">
@@ -63,17 +48,15 @@ class Profile extends React.Component {
                     <Text
                       size={16}
                       color="#525F7F"
-                      style={{ textAlign: "center" }}
-                    >
-                      An artist of considerable range, Jessica name taken by
-                      Melbourne …
-                    </Text>                    
+                      style={{ textAlign: "center" }}>
+                      ...
+                    </Text>
                   </Block>
                 </Block>
               </Block>
             </ScrollView>
           </ImageBackground>
-        </Block>        
+        </Block>
       </Block>
     );
   }
